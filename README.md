@@ -27,8 +27,8 @@ line 7: DST_DIR="XXXXXXXXXXXX"
 ### Overview
  Revert movie file name from "CAM[1|2]_DDMMYYY-hhmm_XXXX.MP4" to "DDMMYYYY-hhmm_CAM[1|2]_XXXX.MP4"
 ### Description
- Sometimes K1 can not remove old files automatically if that files were renamed by renameDriveMovieFile.bat. Maybe K1 can not recognize renamed files.  
- You can revert file name to use this scipt if K1 work incorrectly.  
+ Sometimes K1 can not remove old files automatically if that files were renamed by renameDriveMovieFile.bat. Maybe K1 can not recognize renamed files. (It might be my misunderstanding. After that, K1 remove old files correctly nevertheless renaming the old file name already. added on 2017/07/05)  
+ You can revert file name to use this scipt if K1 work incorrectly.  
 
 ### Requirement
  windows 10 (I have checked with the environment)  
