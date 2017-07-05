@@ -17,11 +17,14 @@ I hope better solution if you know.
 ### Usage
  You should edit direcotry name matching to you environment.  
 ```
-line 6: SRC_DIR="XXXXXXXXXXXX"  
-line 7: DST_DIR="XXXXXXXXXXXX"
+line 5: SRC_DIR="XXXXXXXXXXXX"  
 ```
 
- *Just rename files if you set same name both SRC_DIR and DST_DIR otherwise move files from SRC_DIR to DST_DIR*  
+Newly support searching subdirectory. (2017/07/05)  
+For example, BAT file search both direcotry "D:\DCIM\100MEDIA" and "D:\DCIM\101MEDIA" if you set SRC_DIR="D:\DCIM".  
+
+~~*Just rename files if you set same name both SRC_DIR and DST_DIR otherwise move files from SRC_DIR to DST_DIR*~~
+Not support copy function but move (just rename) function only from 2017/07/05. You can set only SRC_DIR (same as DST_DIR).
  
 ## revertDriveMovieFile.bat
 ### Overview
@@ -36,9 +39,12 @@ line 7: DST_DIR="XXXXXXXXXXXX"
 ### Usage
  You should edit direcotry name matching to you environment.  
 ```
-line 6: SRC_DIR="XXXXXXXXXXXX"  
-line 7: DST_DIR="XXXXXXXXXXXX"
+line 5: SRC_DIR="XXXXXXXXXXXX"  
 ```
 
- *Just rename files if you set same name both SRC_DIR and DST_DIR otherwise move files from SRC_DIR to DST_DIR*  
+Newly support searching subdirectory. (2017/07/05)  
+For example, BAT file search both direcotry "D:\DCIM\100MEDIA" and "D:\DCIM\101MEDIA" if you set SRC_DIR="D:\DCIM".  
+
+~~*Just rename files if you set same name both SRC_DIR and DST_DIR otherwise move files from SRC_DIR to DST_DIR*~~
+Not support copy function but move (just rename) function only from 2017/07/05. You can set only SRC_DIR (same as DST_DIR).
  
