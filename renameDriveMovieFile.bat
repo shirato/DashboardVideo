@@ -2,20 +2,13 @@
 
 rem set source and destination file path
 rem set SRC_DIR="C:\Users\Satoshi\Desktop\temp"
-rem set DST_DIR="C:\Users\Satoshi\Desktop\temp"
-set SRC_DIR="D:\DCIM\101MEDIA"
-set DST_DIR="D:\DCIM\101MEDIA"
+set SRC_DIR="D:\DCIM"
 
 pushd %SRC_DIR%
 
-rem check if DST_DIR exist or not
-rem make DST_DIR if not exist
-if not exist %DST_DIR% (
-	mkdir %DST_DIR%
-	)
-
 rem check movie file (*.MP4) loop
-for %%i in (*.MP4) do (
+for /r %%i in (*.MP4) do (
+	set DIR_PATH=%%~dpi
 	set FILE_NAME=%%~ni
 
 	rem separate file name 
@@ -32,11 +25,11 @@ for %%i in (*.MP4) do (
 		rem generate new file name
 		call set NEW_FILE=%%CAM_NUM%%_%%DATE_TIME%%_%%FILE_NUM%%.MP4
 
-		call echo old file name: %%i
+		call echo old file name: %%~nxi
 		call echo new file name: %%NEW_FILE%%
 
 		rem execute rename
-		call move %%i %%DST_DIR%%\%%NEW_FILE%%
+		call move %%DIR_PATH%%\%%~nxi %%DIR_PATH%%\%%NEW_FILE%%
 		)
 	)
 
@@ -44,4 +37,5 @@ goto :END
 
 :END
 popd
+pause
 exit /b 0
