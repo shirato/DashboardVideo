@@ -3,8 +3,8 @@
 rem set source and destination file path
 rem set SRC_DIR="C:\Users\Satoshi\Desktop\temp"
 rem set DST_DIR="C:\Users\Satoshi\Desktop\temp"
-set SRC_DIR="D:\DCIM\101MEDIA"
-set DST_DIR="D:\DCIM\101MEDIA"
+set SRC_DIR="E:\DCIM\101MEDIA"
+set DST_DIR="E:\DCIM\101MEDIA"
 
 pushd %SRC_DIR%
 
@@ -19,8 +19,8 @@ for %%i in (*.MP4) do (
 	set FILE_NAME=%%~ni
 
 	rem separate file name 
-	call set CAM_NUM=%%FILE_NAME:~-9,4%%
-	call set DATE_TIME=%%FILE_NAME:~,13%%
+	call set CAM_NUM=%%FILE_NAME:~,4%%
+	call set DATE_TIME=%%FILE_NAME:~5,13%%
 	call set FILE_NUM=%%FILE_NAME:~-4%%
 
 	rem check if cam number or not
@@ -30,7 +30,7 @@ for %%i in (*.MP4) do (
 
 		) else (
 		rem generate new file name
-		call set NEW_FILE=%%CAM_NUM%%_%%DATE_TIME%%_%%FILE_NUM%%.MP4
+		call set NEW_FILE=%%DATE_TIME%%_%%CAM_NUM%%_%%FILE_NUM%%.MP4
 
 		call echo old file name: %%i
 		call echo new file name: %%NEW_FILE%%
