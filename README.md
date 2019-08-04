@@ -1,6 +1,6 @@
 # DashboardVideo INNOVV K1
 
-## renameDriveMovieFile.bat
+## renameDriveMovieFile
 ### Overview
  Rename movie file name from "DDMMYYYY-hhmm_CAM[1|2]_XXXX.MP4" to "CAM[1|2]_DDMMYYY-hhmm_XXXX.MP4"
 ### Description
@@ -11,7 +11,7 @@ I don't know how to group each individual movie file by INNOVV K1 and what is tr
 But my renaming rule improve grouping result a little bit.  
 I hope better solution if you know.  
  
-## revertDriveMovieFile.bat
+## revertDriveMovieFile
 ### Overview
  Revert movie file name from "CAM[1|2]_DDMMYYY-hhmm_XXXX.MP4" to "DDMMYYYY-hhmm_CAM[1|2]_XXXX.MP4"
 ### Description
