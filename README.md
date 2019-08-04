@@ -18,9 +18,8 @@ I hope better solution if you know.
  Sometimes K1 can not remove old files automatically if that files were renamed by renameDriveMovieFile.bat. Maybe K1 can not recognize renamed files. (It might be my misunderstanding. After that, K1 remove old files correctly nevertheless renaming the old file name already. added on 2017/07/05)  
  You can revert file name to use this scipt if K1 work incorrectly.  
 
-## Requirement
- windows 10   
- $ bash --version
- GNU bash, version 5.0.3(1)-release (x86_64-pc-linux-gnu)
+## Requirement and Usage  
+ [for Windows](https://github.com/shirato/DashboardVideo/tree/master/forWindows)  
+ [for Linux](https://github.com/shirato/DashboardVideo/tree/master/forLinux)  
+   *GNU bash, version 5.0.3(1)-release (x86_64-pc-linux-gnu)*  
  
-### Usage
