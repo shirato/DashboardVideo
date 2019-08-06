@@ -1,6 +1,6 @@
 # DashboardVideo INNOVV K1
 
-## renameDriveMovieFile.bat
+## renameDriveMovieFileName.sh
 ### Overview
  Rename movie file name from "DDMMYYYY-hhmm_CAM[1|2]_XXXX.MP4" to "CAM[1|2]_DDMMYYY-hhmm_XXXX.MP4"
 ### Description
@@ -26,7 +26,7 @@ For example, BAT file search both direcotry "D:\DCIM\100MEDIA" and "D:\DCIM\101M
 ~~*Just rename files if you set same name both SRC_DIR and DST_DIR otherwise move files from SRC_DIR to DST_DIR*~~
 Not support copy function but move (just rename) function only from 2017/07/05. You can set only SRC_DIR (same as DST_DIR).
  
-## revertDriveMovieFile.bat
+## revertDriveMovieFileName.sh
 ### Overview
  Revert movie file name from "CAM[1|2]_DDMMYYY-hhmm_XXXX.MP4" to "DDMMYYYY-hhmm_CAM[1|2]_XXXX.MP4"
 ### Description
